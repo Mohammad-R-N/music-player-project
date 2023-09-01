@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+
+class Genre(models.Model):
+    pass
+
+class Artist(models.Model):
+    pass
+
+
+class Song(models.Model):
+    pass
