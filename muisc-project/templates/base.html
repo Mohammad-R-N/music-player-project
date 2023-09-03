@@ -40,11 +40,16 @@
         </nav>
     </div>
 
+    {%include "includes/messages.html"%}
+
     {% block header %}
 
     {% endblock header %}
 
-    {%include "includes/messages.html"%}
+    {% block content %}
+
+    {% endblock content %}
+
 
     {%include "includes/footer.html"%}
     <script src="{%static 'js/bootstrap.js'%}"></script>

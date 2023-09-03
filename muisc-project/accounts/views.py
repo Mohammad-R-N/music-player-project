@@ -13,3 +13,8 @@ def login(request):
 
 def signup(request):
     return render(request,'accounts/signup/signup.html')
+
+
+
+def myplaylists(request):
+    return render(request,'accounts/myplaylists/myplaylists.html')
