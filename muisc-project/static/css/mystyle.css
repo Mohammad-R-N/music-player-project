@@ -1,9 +1,14 @@
-.my-bg {
+.my-header-bg {
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #212121;
 }
+
+.my-bg {
+    background-color: #212121;
+}
+
 
 .my-footer {
     position: fixed;
