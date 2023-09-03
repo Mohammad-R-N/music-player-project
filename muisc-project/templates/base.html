@@ -6,10 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
 </head>
 
-<body>
+<body class="my-bg">
+    {%include "includes/navbar.html"%}
+    {%include "includes/messages.html"%}
+    {%include "includes/header.html"%}
 
+    {%include "includes/footer.html"%}
+    <script src="{%static 'js/bootstrap.js'%}"></script>
 </body>
 
 </html>

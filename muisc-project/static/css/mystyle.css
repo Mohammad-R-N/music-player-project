@@ -1,0 +1,17 @@
+.my-bg {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #212121;
+}
+
+.my-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.my-img {
+    opacity: 0.6;
+    filter: grayscale(100%)
+}
