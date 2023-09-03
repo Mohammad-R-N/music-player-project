@@ -10,3 +10,6 @@ def otp(request):
 
 def login(request):
     return render(request,'accounts/login/login.html')
+
+def signin(request):
+    return render(request,'accounts/signin/signin.html')
