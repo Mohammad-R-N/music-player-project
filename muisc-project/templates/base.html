@@ -8,12 +8,43 @@
     <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    {% block link %}{% endblock link %}
 </head>
 
 <body class="my-bg">
-    {%include "includes/navbar.html"%}
+    <!--NAVBAR-->
+    <div class="px-5 my-3">
+        <nav class="navbar navbar-expand-lg bg-dark rounded-5 px-3" aria-label="Thirteenth navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0 text-warning" href="#">Life Music</a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                        </li>
+                        {% block links %}
+                        {% endblock links %}
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <button class="btn btn-warning mx-2">SignUp</button>
+                        <button class="btn btn-warning">LogIn</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    {% block header %}
+
+    {% endblock header %}
+
     {%include "includes/messages.html"%}
-    {%include "includes/header.html"%}
 
     {%include "includes/footer.html"%}
     <script src="{%static 'js/bootstrap.js'%}"></script>

@@ -2,6 +2,7 @@
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.8;
     background-color: #212121;
 }
 
@@ -17,6 +18,6 @@
 }
 
 .my-img {
-    opacity: 0.6;
-    filter: grayscale(100%)
+    opacity: 0.9;
+    filter: grayscale(90%)
 }

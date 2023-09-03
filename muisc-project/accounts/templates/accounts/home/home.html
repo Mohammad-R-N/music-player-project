@@ -1,1 +1,20 @@
 {%extends 'base.html'%}
+
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block links %}
+<li class="nav-item">
+    <a class="nav-link active text-warning" aria-current="page" href="#">PlayLists</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link active text-warning" aria-current="page" href="#">Users</a>
+</li>
+{% endblock links %}
+
+{% block header %}
+{%include "includes/header.html"%}
+
+{% endblock header %}
