@@ -1,0 +1,54 @@
+{%extends "base.html"%}
+{% load static %}
+
+{% block title %}
+LogIn
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">{% endblock link %}
+
+
+{% block links %}
+<li class="nav-item">
+    <a class="nav-link active text-warning" aria-current="page" href="#">PlayLists</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link active text-warning" aria-current="page" href="#">Users</a>
+</li>
+{% endblock links %}
+
+
+
+{% block header %}
+<div class="d-flex justify-content-center my-5 py-5 mb-5">
+
+    <div class="card bg-dark">
+        <a class="singup">Login</a>
+        <div class="inputBox1">
+            <input type="text" required="required">
+            <span class="user">Email</span>
+        </div>
+
+        <div class="inputBox">
+            <input type="text" required="required">
+            <span>Username</span>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" required="required">
+            <span>Password</span>
+        </div>
+        <div class="form--marketing">
+            <input id="okayToEmail" type="checkbox">
+            <label for="okayToEmail" class="checkbox mx-2">
+                I want to join the newsletter
+            </label>
+        </div>
+        <button class="enter">Enter</button>
+
+    </div>
+
+</div>
+
+{% endblock header %}

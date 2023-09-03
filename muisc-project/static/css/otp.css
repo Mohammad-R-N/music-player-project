@@ -83,6 +83,7 @@
 
 .form button:hover {
     background-color: #ffc107;
+    color: #111;
 }
 
 @keyframes anim {

@@ -7,3 +7,6 @@ def home(request):
 
 def otp(request):
     return render(request,'accounts/login/otp.html')
+
+def login(request):
+    return render(request,'accounts/login/login.html')
