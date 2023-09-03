@@ -5,5 +5,5 @@ urlpatterns=[
     path('',home,name='home'),
     path('otp/', otp, name='otp'),
     path('login/',login,name="login"),
-    path("signin/",signin,name="signin")
+    path("signup/",signup,name="signup")
     ]
