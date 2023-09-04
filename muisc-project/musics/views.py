@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def playlist_detail(request):
+    return render(request,'musics/allplaylists/playlist-detail.html')

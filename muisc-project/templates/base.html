@@ -26,14 +26,16 @@
                     <a class="navbar-brand col-lg-3 me-0 text-warning" href="#">Life Music</a>
                     <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                         <li class="nav-item">
-                            <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-warning" aria-current="page" href="#">Home</a>
                         </li>
                         {% block links %}
                         {% endblock links %}
                     </ul>
                     <div class="d-lg-flex col-lg-3 justify-content-lg-end">
                         <button class="btn btn-warning mx-2">SignUp</button>
-                        <button class="btn btn-warning">LogIn</button>
+                        <button class="btn btn-warning mx-2">LogIn</button>
+                        {% block button %}
+                        {% endblock button %}
                     </div>
                 </div>
             </div>

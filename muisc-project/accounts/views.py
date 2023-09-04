@@ -14,7 +14,8 @@ def login(request):
 def signup(request):
     return render(request,'accounts/signup/signup.html')
 
-
+def profile(request):
+    return render(request,'accounts/profile/profile.html')
 
 def myplaylists(request):
     return render(request,'accounts/myplaylists/myplaylists.html')

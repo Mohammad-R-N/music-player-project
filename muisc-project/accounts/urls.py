@@ -6,5 +6,6 @@ urlpatterns=[
     path('otp/', otp, name='otp'),
     path('login/',login,name="login"),
     path("signup/",signup,name="signup"),
-    path("myplaylists/",myplaylists,name="myplaylists")
+    path("myplaylists/",myplaylists,name="myplaylists"),
+
     ]

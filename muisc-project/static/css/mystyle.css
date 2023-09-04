@@ -21,3 +21,7 @@
     opacity: 0.9;
     filter: grayscale(90%)
 }
+
+.my-text {
+    text-decoration: solid;
+}
