@@ -1,0 +1,48 @@
+{%extends "base.html"%}
+{% load static %}
+
+{% block title %}
+Song Detail
+{% endblock title %}
+
+{% block links %}
+<li class="nav-item">
+    <a class="nav-link active text-warning" aria-current="page" href="#">PlayLists</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link active text-warning" aria-current="page" href="#">Users</a>
+</li>
+{% endblock links %}
+
+
+{% block header %}
+
+{% endblock header %}
+
+
+{% block content %}
+<div class="d-flex justify-content-center m-3">
+    <div class="card bg-dark " style="width: 30rem;">
+        <img src="../../../../static/img/3.png" class="card-img-top" alt="...">
+        <div class="card-body  ">
+            <h5 class="card-title text-warning">Hits</h5>
+            <p class="card-text text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In perferendis
+                adipisci dolor
+                doloribus perspiciatis, ipsa minus quaerat praesentium. Illum officiis modi consectetur nostrum
+                exercitationem soluta maxime, necessitatibus possimus similique molestiae.</p>
+        </div>
+        <ul class="list-group list-group-flush bg-dark">
+            <li class="list-group-item bg-dark text-white">Artist: unknown</li>
+            <li class="list-group-item bg-dark text-white">Genre: Pop</li>
+            <li class="list-group-item bg-dark text-white">duration: 3:21</li>
+        </ul>
+        <div class="card-body bg-dark">
+            <a href="#" class="btn btn-warning">Listen</a>
+            <a href="#" class="btn btn-warning">Download</a>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+{% endblock content %}

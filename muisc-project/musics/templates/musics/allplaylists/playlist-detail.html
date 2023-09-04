@@ -5,6 +5,10 @@
 Playlist detail
 {% endblock title %}
 
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/playlist-detail.css' %}">{% endblock link %}
+
+
 {% block links %}
 <li class="nav-item">
     <a class="nav-link active text-warning" aria-current="page" href="#">PlayLists</a>
@@ -21,9 +25,243 @@ Playlist detail
 
 
 {% block content %}
-<div class="container">
-
-
-
-</div>
+<section>
+    <!--for demo wrap-->
+    <h1>PLAYLIST's NAME</h1>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Cover</th>
+                    <th>Song</th>
+                    <th>Play</th>
+                    <th>Like</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="../../../../static/img/2.jpg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="../../../../static/img/4.jpg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="../../../../static/img/3.png" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="../../../../static/img/4.jpg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="../../../../static/img/1.jpeg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="../../../../static/img/2.jpg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="../../../../static/img/4.jpg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="../../../../static/img/3.png" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="../../../../static/img/4.jpg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="../../../../static/img/1.jpeg" style="height: 30px; width: 30px; border-radius: 20px;"
+                            alt=""></td>
+                    <td>PopHits-unknown artist</td>
+                    <td> play</td>
+                    <td class="text-warning">YELLOW LIKE <i class="bi bi-heart"></i></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Action
+                            </button>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-warning" href="#">Comments</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 {% endblock content %}
+
+
+{% block addscript %}
+<script src="{%static 'js/playlist-js.js'%}"></script>
+{% endblock addscript %}
