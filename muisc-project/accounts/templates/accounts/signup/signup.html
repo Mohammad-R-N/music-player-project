@@ -22,27 +22,34 @@ SignUp
 
 {% block header %}
 <div class="d-flex justify-content-center my-5 py-5 mb-5">
+    <form action="" method="post">
+        <div class="card bg-dark">
+            <a class="singup">Registration</a>
+            {%csrf-token%}
+            <div class="inputBox1">
+                <input type="text" required="required">
+                <span class="user">Email</span>
+            </div>
 
-    <div class="card bg-dark">
-        <a class="singup">SignUp</a>
-        <div class="inputBox1">
-            <input type="text" required="required">
-            <span class="user">Email</span>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span>Username</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span>Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span>Repeat Password</span>
+            </div>
+
+            <input class="enter" type="submit" value="SignUp">
+
         </div>
+    </form>
 
-        <div class="inputBox">
-            <input type="text" required="required">
-            <span>Username</span>
-        </div>
-
-        <div class="inputBox">
-            <input type="password" required="required">
-            <span>Password</span>
-        </div>
-
-        <button class="enter">Enter</button>
-
-    </div>
 
 </div>
 

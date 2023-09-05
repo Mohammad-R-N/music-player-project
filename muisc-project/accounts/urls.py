@@ -5,7 +5,7 @@ urlpatterns=[
     path('',home,name='home'),
     path('otp/', otp, name='otp'),
     path('login/',login,name="login"),
-    path("signup/",signup,name="signup"),
+    path("signup/",UserSignUp.as_view(),name="signup"),
     path("myplaylists/",myplaylists,name="myplaylists"),
 
     ]

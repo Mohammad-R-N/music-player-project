@@ -22,32 +22,30 @@ LogIn
 
 {% block header %}
 <div class="d-flex justify-content-center my-5 py-5 mb-5">
+    <form action="" method="post">
+        <div class="card bg-dark">
+            <a class="singup">LogIn</a>
+            {%csrf-token%}
+            <div class="inputBox1">
+                <input type="text" required="required">
+                <span class="user">Email</span>
+            </div>
 
-    <div class="card bg-dark">
-        <a class="singup">Login</a>
-        <div class="inputBox1">
-            <input type="text" required="required">
-            <span class="user">Email</span>
-        </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span>Password</span>
+            </div>
+            <div class="form--marketing">
+                <input id="okayToEmail" type="checkbox">
+                <label for="okayToEmail" class="checkbox mx-2">
+                    Remember Me!
+                </label>
+            </div>
+            <input class="enter" type="submit" value="LogIn">
 
-        <div class="inputBox">
-            <input type="text" required="required">
-            <span>Username</span>
         </div>
+    </form>
 
-        <div class="inputBox">
-            <input type="password" required="required">
-            <span>Password</span>
-        </div>
-        <div class="form--marketing">
-            <input id="okayToEmail" type="checkbox">
-            <label for="okayToEmail" class="checkbox mx-2">
-                I want to join the newsletter
-            </label>
-        </div>
-        <button class="enter">Enter</button>
-
-    </div>
 
 </div>
 

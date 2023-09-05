@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.views import View
 
 
 def home(request):
@@ -11,8 +11,15 @@ def otp(request):
 def login(request):
     return render(request,'accounts/login/login.html')
 
-def signup(request):
-    return render(request,'accounts/signup/signup.html')
+class UserSignUp(View):
+
+    def get(self,request):
+        
+        return render(request,"accounts/signup/signup.html")
+
+    def post(self,request):
+        pass
+
 
 def profile(request):
     return render(request,'accounts/profile/profile.html')
