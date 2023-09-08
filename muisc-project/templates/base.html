@@ -29,14 +29,14 @@
                     <a class="navbar-brand col-lg-3 me-0 text-warning" href="#">Life Music</a>
                     <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                         <li class="nav-item">
-                            <a class="nav-link text-warning" aria-current="page" href="{%url 'home'%}">Home</a>
+                            <a class="nav-link text-warning" aria-current="page" href="{%url 'accounts:home'%}">Home</a>
                         </li>
                         {% block links %}
                         {% endblock links %}
                     </ul>
                     <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                        <a class="btn btn-warning mx-2 " href="{% url 'signup'%}">SignUp</a>
-                        <a class="btn btn-warning mx-2" href="{%url 'login'%}">LogIn</a>
+                        <a class="btn btn-warning mx-2 " href="{% url 'accounts:signup'%}">SignUp</a>
+                        <a class="btn btn-warning mx-2" href="{%url 'accounts:login'%}">LogIn</a>
                         {% block button %}
                         {% endblock button %}
                     </div>
